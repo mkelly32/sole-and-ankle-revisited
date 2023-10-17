@@ -1,4 +1,4 @@
-export const COLORS = {
+const COLORS = {
   white: 'hsl(0deg 0% 100%)',
   gray: {
     100: 'hsl(185deg 5% 95%)',
@@ -11,8 +11,26 @@ export const COLORS = {
   secondary: 'hsl(240deg 60% 63%)',
 };
 
-export const WEIGHTS = {
+const WEIGHTS = {
   normal: 500,
   medium: 600,
   bold: 800,
+};
+
+const BREAKPOINTS = {
+    phoneMax: 550,
+    tabletMax: 1100,
+    laptopMax: 1500,
+};
+
+const QUERIES =  {
+    phones: `(max-width: ${BREAKPOINTS.phoneMax}px)`,
+    tablets: `(max-width: ${BREAKPOINTS.tabletMax}px)`,
+    laptops: `(max-width: ${BREAKPOINTS.laptopMax}px)`,
+};
+
+export {
+    COLORS,
+    WEIGHTS,
+    QUERIES,
 };
