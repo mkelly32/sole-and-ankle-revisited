@@ -1,4 +1,4 @@
-const COLORS = {
+export const COLORS = {
   white: 'hsl(0deg 0% 100%)',
   gray: {
     100: 'hsl(185deg 5% 95%)',
@@ -11,26 +11,26 @@ const COLORS = {
   secondary: 'hsl(240deg 60% 63%)',
 };
 
-const WEIGHTS = {
+export const WEIGHTS = {
   normal: 500,
   medium: 600,
   bold: 800,
 };
 
 const BREAKPOINTS = {
-    phoneMax: 550,
-    tabletMax: 1100,
-    laptopMax: 1500,
+    phoneMax: 34,
+    tabletMax: 69,
+    laptopMax: 93,
 };
 
 const QUERIES =  {
-    phones: `(max-width: ${BREAKPOINTS.phoneMax}px)`,
-    tablets: `(max-width: ${BREAKPOINTS.tabletMax}px)`,
-    laptops: `(max-width: ${BREAKPOINTS.laptopMax}px)`,
+    phone: `(max-width: ${BREAKPOINTS.phoneMax}rem)`,
+    tablet: `(max-width: ${BREAKPOINTS.tabletMax}rem)`,
+    laptop: `(max-width: ${BREAKPOINTS.laptopMax}rem)`,
 };
 
-export {
-    COLORS,
-    WEIGHTS,
-    QUERIES,
+export const theme = {
+    colors: COLORS,
+    weights: WEIGHTS,
+    queries: QUERIES,
 };

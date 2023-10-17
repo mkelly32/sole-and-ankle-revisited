@@ -4,11 +4,11 @@ import { ThemeProvider } from 'styled-components';
 
 import App from './components/App';
 import GlobalStyles from './components/GlobalStyles';
-import { COLORS, WEIGHTS, QUERIES } from './constants';
+import { theme } from './constants';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeProvider theme={{COLORS, WEIGHTS, QUERIES}}>
+    <ThemeProvider theme={{...theme}}>
         <App />
     </ThemeProvider>
     <GlobalStyles />
