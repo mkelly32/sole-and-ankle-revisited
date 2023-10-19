@@ -34,7 +34,9 @@ const Header = () => {
           <TabletIcons>
             <Icon id="shopping-bag" strokeWidth={1} />
             <Icon id="search" strokeWidth={1} />
-            <Icon id="menu" strokeWidth={1} />
+            <IconButtonWrapper onClick={() => setShowMobileMenu(true)}>
+              <Icon id="menu" strokeWidth={1} />
+            </IconButtonWrapper>
           </TabletIcons>
         </Side>
       </MainHeader>
@@ -92,6 +94,10 @@ const NavLink = styled.a`
   &:first-of-type {
     color: ${COLORS.secondary};
   }
+`;
+
+const IconButtonWrapper = styled.button`
+    display: contents;
 `;
 
 export default Header;
