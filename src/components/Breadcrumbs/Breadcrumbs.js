@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 import { COLORS } from '../../constants';
+import { Title } from '../ShoeIndex';
 
 const Breadcrumbs = ({ children }) => {
   return <Wrapper>{children}</Wrapper>;
@@ -40,5 +41,12 @@ const CrumbLink = styled.a`
 const Wrapper = styled.nav`
   display: flex;
   font-size: 0.875rem;
+  
+  ${Title} && {
+    display: none;
+    @media ${p => p.theme.queries.tablet} {
+        display: flex;
+    }
+  }
 `;
 export default Breadcrumbs;
