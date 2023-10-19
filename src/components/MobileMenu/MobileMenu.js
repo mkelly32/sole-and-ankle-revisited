@@ -73,11 +73,11 @@ const PrimaryLink = styled.a`
     font-size: 1.125rem;
     text-transform: uppercase;
     text-decoration: none;
-    color: ${p => p.theme.colors.gray['900']};
+    color: var(--color-gray-900);
     font-weight: ${p => p.theme.weights.medium};
 
     &:first-of-type {
-        color: ${p => p.theme.colors.secondary};
+        color: var(--color-secondary);
     }
 `;
 
@@ -89,7 +89,7 @@ const Footer = styled.footer`
 `;
 
 const SecondaryLink = styled.a`
-    color: ${p => p.theme.colors.gray['700']};
+    color: var(--color-gray-700);
     text-decoration: none;
     line-height: 1rem;
     font-size: 0.9rem;
